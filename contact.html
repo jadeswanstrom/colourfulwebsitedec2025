@@ -1,0 +1,216 @@
+<!-- contact.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Colourful</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+   <link rel="icon" type="image/png" sizes="32x32" href="./ColourMeicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./ColourMeicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./ColourMeicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Main nav -->
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="index.html">
+        <span class="brand__title">the Colourful app</span>
+      </a>
+
+      <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="artists.html" class="nav__link">Artists</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link isActive" aria-current="page">Contact</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+
+        <span class="nav__divider" aria-hidden="true"></span>
+
+        <a class="nav__cta" href="https://apps.apple.com/ca/app/colourful/id6755753703">Download from the App Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page -->
+  <main class="contactPage">
+    <div class="wrap">
+      <section class="contactBlock" aria-label="Contact form">
+        <!-- LEFT: form card inside a cute background panel -->
+        <div class="contactBlock__media">
+          <div class="contactCard">
+            <h2 class="contactCard__title">Contact Us</h2>
+
+            <!-- ✅ Option A (recommended): connect to Formspree (replace with your real endpoint)
+                 action="https://formspree.io/f/YOUR_FORM_ID"
+
+                 ✅ Option B (simple but less reliable): mailto
+                 action="mailto:contact@colourfulapp.ca" enctype="text/plain"
+            -->
+            <form id="contactForm" class="contactForm" action="https://formspree.io/f/xpqzlrkk" method="POST">
+
+
+              <div class="field">
+                <label for="name">Name<span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" placeholder="Your name" required />
+              </div>
+
+              <div class="field">
+                <label for="email">Email Address<span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" placeholder="you@email.com" required />
+              </div>
+
+              <div class="field">
+                <label for="device">Device<span aria-hidden="true">*</span></label>
+                <select id="device" name="device" required>
+                  <option value="" selected disabled>Select your device</option>
+                  <option value="iPhone">iPhone</option>
+                  <option value="iPad">iPad</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="message">Message<span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us what’s going on…" required></textarea>
+              </div>
+
+              <button class="contactForm__submit" type="submit">
+                Submit →
+              </button>
+
+              <p class="contactForm__hint">
+                Or email us directly at
+                <a href="mailto:contact@colourfulapp.ca">contact@colourfulapp.ca</a>
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- RIGHT: text -->
+        <div class="contactBlock__content">
+          <h1 class="contactBlock__title">Contact Us!</h1>
+
+          <p class="contactBlock__text">
+            Whether you have questions about the app, need help from tech support, or want to report a bug/issue —
+            we’re here to help!
+          </p>
+
+          <ul class="contactBlock__bullets">
+            <li>Include your device type (iPhone / iPad)</li>
+            <li>Tell us what you expected vs. what happened</li>
+            <li>If it’s a bug, share how you made the bug happen</li>
+            <li>If you have any suggestions for future updates, we are all ears!</li>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ✅ Mega footer moved OUTSIDE the .wrap so it can stretch full width -->
+  <section class="megaFooter" aria-label="Footer links">
+    <div class="wrap megaFooter__inner">
+      <div class="megaFooter__cols">
+
+        <div class="megaFooter__col">
+          <h3 class="megaFooter__title">Home</h3>
+          <a class="megaFooter__link" href="./index.html">Home</a>
+          <a class="megaFooter__link" href="./artists.html">Artists</a>
+          <a class="megaFooter__link" href="./about.html">About</a>
+        </div>
+
+        <div class="megaFooter__col">
+          <h3 class="megaFooter__title">Collaborations</h3>
+          <a class="megaFooter__link" href="./artistprogram.html">Artist Program</a>
+        </div>
+
+        <div class="megaFooter__col">
+  <h3 class="megaFooter__title">Contact</h3>
+  <a
+    class="megaFooter__link"
+    href="mailto:contact@colourfulapp.ca?subject=Colourful%20Support&body=Hi%20Colourful%20team%2C%0A%0A"
+  >
+    contact@colourfulapp.ca
+  </a>
+</div>
+
+
+      </div>
+
+      <div class="megaFooter__social" aria-label="Social links">
+        <!-- Replace # with your real links -->
+        <a class="socialIcon" href="https://www.tiktok.com/@colourful.app" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.7 5.2c1 1 2.3 1.6 3.7 1.7V10c-1.5 0-2.9-.4-4.1-1.2v6.2c0 3-2.4 5.4-5.4 5.4S5.5 18 5.5 15s2.4-5.4 5.4-5.4c.5 0 1 .1 1.5.2v3c-.5-.2-1-.3-1.5-.3-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3 2.3-1 2.3-2.3V3.5h3c0 .6.2 1.2.5 1.7z"/>
+          </svg>
+        </a>
+
+        <a class="socialIcon" href="https://www.instagram.com/colourful.app/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <small>© <span id="year"></span> Colourful. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="script.js"></script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("contactForm");
+    if (!form) return;
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(form);
+
+      try {
+        const res = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: { "Accept": "application/json" }
+        });
+
+        if (res.ok) {
+          form.reset();
+          window.location.href = "thanks.html";
+        } else {
+          alert("Oops! Something went wrong submitting the form. Please try again.");
+        }
+      } catch (err) {
+        alert("Network error. Please try again.");
+      }
+      setTimeout(() => {
+  window.location.href = "thanks.html";
+}, 800);
+
+    });
+  });
+</script>
+
+
+</body>
+</html>

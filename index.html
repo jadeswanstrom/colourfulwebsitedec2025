@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colourful</title>
+
+  <!-- Optional: nice rounded fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./ColourMeicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./ColourMeicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./ColourMeicon.png">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="./ColourMeicon.png">
+</head>
+
+<body>
+  <!-- Top thin bar 
+  <div class="topbar">
+    <div class="wrap topbar__inner">
+      <p>Made for Ipad and Iphones</p>
+    </div>
+  </div> -->
+
+  <!-- Main nav -->
+  <header class="header">
+    <div class="wrap header__inner">
+      <a class="brand" href="#">
+        <span class="brand__title">the Colourful app</span>
+      </a>
+
+      <button class="navToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primaryNav">
+  ☰
+</button>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="artists.html" class="nav__link">Artists</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+        <a href="privacy.html" class="nav__link">Privacy Policy</a>
+
+        <span class="nav__divider" aria-hidden="true"></span>
+
+        <a class="nav__cta" href="https://apps.apple.com/ca/app/colourful/id6755753703">Download from the App Store</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ✅ Main content (wrap ONLY the inner content, not the whole page) -->
+  <main>
+    <div class="wrap">
+      <section class="hero heroCarousel" aria-roledescription="carousel" aria-label="Homepage hero banners">
+        <a class="heroCarousel__link" href="#" aria-label="Open featured banner link">
+          <img class="heroCarousel__img" src="./Welcometocolourfulwebsite.png" alt="Welcome to Colourful" />
+        </a>
+
+        <div class="heroCarousel__dots" role="tablist" aria-label="Choose banner">
+          <!-- JS injects dots -->
+        </div>
+
+        <button class="heroCarousel__arrow heroCarousel__arrow--left" type="button" aria-label="Previous banner">
+          ‹
+        </button>
+        <button class="heroCarousel__arrow heroCarousel__arrow--right" type="button" aria-label="Next banner">
+          ›
+        </button>
+      </section>
+
+   <section class="homeCta" aria-label="Download Colourful and app features">
+  <div class="homeCta__topRow">
+    <a class="homeCta__button"
+       href="https://apps.apple.com/ca/app/colourful/id6755753703"
+       target="_blank"
+       rel="noopener noreferrer">
+      Download from the App Store
+    </a>
+
+    <span class="homeCta__madeFor">Made for iPad and iPhone</span>
+  </div>
+
+  <div class="homeCta__card">
+    <h2 class="homeCta__title">Colouring made simple.</h2>
+    <p class="homeCta__text">
+      Colourful is a relaxing digital colouring app designed to make colouring easy and fun.
+      Whether you’re brand new to digital art or already obsessed with it, there is something just so 
+      nice about simplicity.
+    </p>
+
+    <ul class="homeCta__list">
+      <li><strong>Magic Pen:</strong> Colour neatly under line art with ease, using the magic brush pen!</li>
+      <li><strong>Multi-page Book support:</strong> Upload full digital colouring books from your faves, and enjoy multi-page support!</li>
+      <li><strong>Import your own pages:</strong> Upload your own pages from your camera roll, for a customized colouring experience.</li>
+      <li><strong>Shop & Downloads:</strong> Explore a growing library of cozy pages to try in the app, all hand-drawn from real people.</li>
+    </ul>
+  </div>
+</section>
+
+
+    </div>
+  </main>
+
+  <!-- ✅ Mega footer moved OUTSIDE the .wrap so it can stretch full width -->
+  <section class="megaFooter" aria-label="Footer links">
+    <div class="wrap megaFooter__inner">
+      <div class="megaFooter__cols">
+
+        <div class="megaFooter__col">
+          <h3 class="megaFooter__title">Home</h3>
+          <a class="megaFooter__link" href="./index.html">Home</a>
+          <a class="megaFooter__link" href="./artists.html">Artists</a>
+          <a class="megaFooter__link" href="./about.html">About</a>
+        </div>
+
+        <div class="megaFooter__col">
+          <h3 class="megaFooter__title">Collaborations</h3>
+          <a class="megaFooter__link" href="./artistprogram.html">Artist Program</a>
+        </div>
+
+        <div class="megaFooter__col">
+  <h3 class="megaFooter__title">Contact</h3>
+  <a
+    class="megaFooter__link"
+    href="mailto:contact@colourfulapp.ca?subject=Colourful%20Support&body=Hi%20Colourful%20team%2C%0A%0A"
+  >
+    contact@colourfulapp.ca
+  </a>
+</div>
+
+
+      </div>
+
+      <div class="megaFooter__social" aria-label="Social links">
+        <!-- Replace # with your real links -->
+        <a class="socialIcon" href="https://www.tiktok.com/@colourful.app" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M16.7 5.2c1 1 2.3 1.6 3.7 1.7V10c-1.5 0-2.9-.4-4.1-1.2v6.2c0 3-2.4 5.4-5.4 5.4S5.5 18 5.5 15s2.4-5.4 5.4-5.4c.5 0 1 .1 1.5.2v3c-.5-.2-1-.3-1.5-.3-1.3 0-2.3 1-2.3 2.3s1 2.3 2.3 2.3 2.3-1 2.3-2.3V3.5h3c0 .6.2 1.2.5 1.7z"/>
+          </svg>
+        </a>
+
+        <a class="socialIcon" href="https://www.instagram.com/colourful.app/" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.5A5.5 5.5 0 1 1 6.5 14 5.5 5.5 0 0 1 12 8.5zm0 2A3.5 3.5 0 1 0 15.5 14 3.5 3.5 0 0 0 12 10.5zM18 6.6a1 1 0 1 1-1 1 1 1 0 0 1 1-1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your small copyright footer line -->
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <small>© <span id="year"></span> Colourful. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
