@@ -248,14 +248,19 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 /* HERO = full image carousel */
 .heroCarousel{
   margin: 40px 0 70px;
+  position: relative;
+  height: 600px;
+  width: min(1800px, calc(100vw - 40px));
+  box-sizing: border-box;
+
   border-radius: 26px;
   border: 1px solid rgba(0,0,0,0.08);
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-
-  position: relative;
-  height: 560px;                 /* adjust to match your screenshot */
   background: #d9eefc;
+
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .heroCarousel__link{
@@ -265,14 +270,57 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 }
 
 .heroCarousel__img{
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;             /* use cover for full banner */
-  display: block;
+  object-fit: cover;
+  object-position: top center;
   user-select: none;
   -webkit-user-drag: none;
 }
 
+/* Mobile */
+@media (max-width: 768px){
+  .heroCarousel{
+    margin: 24px 0 40px;
+    width: calc(100vw - 24px);
+    height: auto;
+    border-radius: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .heroCarousel__link{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .heroCarousel__img{
+    display: block;
+    width: 100%;
+    height: 75%;
+    object-fit: unset;
+  }
+}
+
+@media (max-width: 980px){
+  .heroCarousel{
+    height: 100px;
+  }
+}
+@media (max-width: 560px){
+  .heroCarousel{
+    height: 200px;
+  }
+}
+
+@media (max-width: 980px) {
+  .homeCta__madeFor{
+  object-position: center;
+  right: 50%;
+  }
+}
 /* Dots */
 .heroCarousel__dots{
   position: absolute;
@@ -298,7 +346,7 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
   background: rgba(0,0,0,0.45);
 }
 
-/* Arrows */
+/* Arrows 
 .heroCarousel__arrow{
   position: absolute;
   top: 50%;
@@ -320,19 +368,9 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 }
 
 .heroCarousel__arrow--left{ left: 16px; }
-.heroCarousel__arrow--right{ right: 16px; }
+.heroCarousel__arrow--right{ right: 16px; } */
 
-/* Responsive height */
-@media (max-width: 980px){
-  .heroCarousel{
-    height: 420px;
-  }
-}
-@media (max-width: 560px){
-  .heroCarousel{
-    height: 320px;
-  }
-}
+
 
 
 /* Responsive */
@@ -438,6 +476,7 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 /* ===== Artists Page ===== */
 .artistsPage{
   padding: 10px 0 90px;
+  background: #ffe3f4;
 }
 
 .artistsHeader{
@@ -934,33 +973,8 @@ html, body { overflow-x: hidden; }
   }
 }
 
-/* ===== Hero Carousel (mobile sizing) ===== */
-@media (max-width: 720px){
-  .heroCarousel{
-    border-radius: 18px;
-  }
 
-  /* Keep the link filling the card */
-  .heroCarousel__link{
-    width: 100%;
-    height: 100%;
-  }
 
-  /* IMPORTANT: fill the fixed-height hero */
-  .heroCarousel__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center; /* or try: 50% 35% if you want it framed higher */
-    display: block;
-  }
-
-  .heroCarousel__arrow{
-    width: 40px;
-    height: 40px;
-    font-size: 26px;
-  }
-}
 
 
 /* ===== Artist blocks stack nicely ===== */
