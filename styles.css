@@ -110,6 +110,13 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 }
 .nav__cta:hover{ filter: brightness(0.98); }
 
+.homeCta__madeFor2{
+  color: #c77eee;
+  font-weight: 800;
+  font-size: 14px;
+  letter-spacing: .3px;
+}
+
 /* HERO */
 .hero{
   margin: 40px 0 70px;
