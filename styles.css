@@ -788,6 +788,12 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
   margin-bottom: 14px;
 }
 
+/* Form styling */
+.contactForm .field1{
+  margin-bottom: 6px;
+  min-height: 90px;
+}
+
 .contactForm label{
   display: block;
   font-weight: 800;
@@ -821,6 +827,11 @@ html,body{ margin:0; padding:0; background:#fff; color:var(--ink); font-family:v
 .contactForm textarea:focus{
   border-color: rgba(152, 120, 255, 0.55);
   box-shadow: 0 0 0 4px rgba(152, 120, 255, 0.18);
+}
+
+.contactForm .field1 textarea {
+  min-height: 55px;
+  height: 55px;
 }
 
 .contactForm__submit{
@@ -1180,4 +1191,8 @@ html, body { overflow-x: hidden; }
 
 .brand__title {
   line-height: 1;
+}
+
+.contactBlock__title2 {
+  font-size: 22px;
 }
