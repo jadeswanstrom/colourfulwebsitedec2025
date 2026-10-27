@@ -1196,3 +1196,43 @@ html, body { overflow-x: hidden; }
 .contactBlock__title2 {
   font-size: 22px;
 }
+
+
+/* Artist buttons side by side */
+.artistBlock__buttonRow {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  width: 100%;
+}
+
+.artistBlock__sundae {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+
+  padding: 14px 12px;
+  background: #ffd28f;
+  color: #1a1a1a;
+  border-radius: 14px;
+  text-decoration: none;
+  text-align: center;
+
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.4;
+
+  min-width: 0;
+}
+
+.artistBlock__sundae:hover {
+  filter: brightness(0.98);
+}
+
+/* Stack buttons on smaller screens */
+@media (max-width: 600px) {
+  .artistBlock__buttonRow {
+    flex-direction: column;
+  }
+}
